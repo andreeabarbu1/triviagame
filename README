@@ -1,4 +1,3 @@
-312C_BARBU_RODICA_ANDREEA
 	Am implementat jocul Trivia astfel:
 	Retin intr-un vector de siruri de caractere intrebarile si raspunsuri (
 parcurg fiecare linie a fisierelor si o copiez in pozitia respectiva). 				

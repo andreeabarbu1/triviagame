@@ -1,0 +1,30 @@
+312C_BARBU_RODICA_ANDREEA
+	Am implementat jocul Trivia astfel:
+	Retin intr-un vector de siruri de caractere intrebarile si raspunsuri (
+parcurg fiecare linie a fisierelor si o copiez in pozitia respectiva). 				Structura unei intrebari este:
+Cat fac 1+2?
+A.3
+B.4
+C.5
+D.6
+A
+	Ultima pozitie este raspunsul corect al intrebarii, astfel, ulterior, 
+voi afisa intrebarile si raspunsurile cu ajutorul unei structuri 
+repetitive ce merge din 6 in 6 pasi, ultimul caracter retinandu-l intr-un sir auxiliar.
+	Incep modul NCURSES, creez fereastra meniu si afisez optiunile New 
+Game, Resume, Quit. Navigarea in meniu se realizeaza cu ajutorul sagetilor, iar selectare prin apasarea tastei ENTER.
+Quit: iesirea din joc
+Resume: initial indisponibila fara inceperea unui joc nou
+New Game: inceperea jocului, afisarea intrebarilor, a raspunsurilor, a scorului si a timpului curent
+	Intrebarile sunt afisate intr-o fereastra noua, prin selectarea unei 
+taste ('A', 'B', 'C', 'D') se trece la intrebarea urmatoare, prin actualizarea scorului: +10 daca s-a raspuns corect, -5 daca s-a raspuns gresit. (Verific daca sirurile auxilare mentionate anterior sunt egale). Daca este apasata oricare alta tasta se astepta o comanda valida. (retin in sirul auxiliar 'X' pentru apasarea oricarei alte taste si verific daca scorul a fost modificat, daca nu reiau instructiunea).
+	Daca a fost apasata tasta 's' intrebarea curenta este sarita fara sa fie
+afectat scorul. Optiunea este disponibila o singura data. 
+	Daca a fost apasata tasta 'q' se revine la meniu ( se sterge fereastra 
+jocului, se creeaza fereastra meniului, se afiseaza optiunile, devine disponibila navigarea prin sageti). In acest moment daca este selectata cea de-a
+doua optiune "Resume" jocul se reia. Scorul si intrebarea sunt aceleasi. (La apasarea tastei "Resume" sterg fereastra meniu, creez fereastra joc si afisez intrebarea la care s-a ramas, cu ajutotul unui auxiliar prin care retin pozitia din vectorul de siruri de caractere).
+	Programul este implementat cu ajutorul unor LOOP-uri ce permit revenirea la
+meniu, iesirea din jocul curent, reintrarea in el etc.
+	In plus, am adaugat unele siruri cu font personalizat si am editat partea 
+de design a jocului prin folosirea unor functii NCURSES, pentru un efect vizual cat mai placut.
+	Am realizat jocul pe parcursul unei saptamani,in care probabil am lucrat 4-5 ore pe zi.

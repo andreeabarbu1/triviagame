@@ -17,12 +17,18 @@ Quit: iesirea din joc
 Resume: initial indisponibila fara inceperea unui joc nou
 New Game: inceperea jocului, afisarea intrebarilor, a raspunsurilor, a scorului si a timpului curent
 	Intrebarile sunt afisate intr-o fereastra noua, prin selectarea unei 
-taste ('A', 'B', 'C', 'D') se trece la intrebarea urmatoare, prin actualizarea scorului: +10 daca s-a raspuns corect, -5 daca s-a raspuns gresit. (Verific daca sirurile auxilare mentionate anterior sunt egale). Daca este apasata oricare alta tasta se astepta o comanda valida. (retin in sirul auxiliar 'X' pentru apasarea oricarei alte taste si verific daca scorul a fost modificat, daca nu reiau instructiunea).
+taste ('A', 'B', 'C', 'D') se trece la intrebarea urmatoare, prin actualizarea scorului: +10 daca s-a raspuns corect,
+-5 daca s-a raspuns gresit. (Verific daca sirurile auxilare mentionate anterior sunt egale). Daca este apasata oricare
+alta tasta se astepta o comanda valida. (retin in sirul auxiliar 'X' pentru apasarea oricarei alte taste si verific daca
+scorul a fost modificat, daca nu reiau instructiunea).
 	Daca a fost apasata tasta 's' intrebarea curenta este sarita fara sa fie
 afectat scorul. Optiunea este disponibila o singura data. 
 	Daca a fost apasata tasta 'q' se revine la meniu ( se sterge fereastra 
-jocului, se creeaza fereastra meniului, se afiseaza optiunile, devine disponibila navigarea prin sageti). In acest moment daca este selectata cea de-a
-doua optiune "Resume" jocul se reia. Scorul si intrebarea sunt aceleasi. (La apasarea tastei "Resume" sterg fereastra meniu, creez fereastra joc si afisez intrebarea la care s-a ramas, cu ajutotul unui auxiliar prin care retin pozitia din vectorul de siruri de caractere).
+jocului, se creeaza fereastra meniului, se afiseaza optiunile, devine disponibila navigarea prin sageti). In acest moment
+daca este selectata cea de-a
+doua optiune "Resume" jocul se reia. Scorul si intrebarea sunt aceleasi. (La apasarea tastei "Resume" sterg fereastra meniu,
+creez fereastra joc si afisez intrebarea la care s-a ramas, cu ajutotul unui auxiliar prin care retin pozitia din vectorul 
+de siruri de caractere).
 	Programul este implementat cu ajutorul unor LOOP-uri ce permit revenirea la
 meniu, iesirea din jocul curent, reintrarea in el etc.
 	In plus, am adaugat unele siruri cu font personalizat si am editat partea 

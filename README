@@ -33,4 +33,3 @@ de siruri de caractere).
 meniu, iesirea din jocul curent, reintrarea in el etc.
 	In plus, am adaugat unele siruri cu font personalizat si am editat partea 
 de design a jocului prin folosirea unor functii NCURSES, pentru un efect vizual cat mai placut.
-	Am realizat jocul pe parcursul unei saptamani,in care probabil am lucrat 4-5 ore pe zi.
